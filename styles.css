@@ -17,10 +17,21 @@ body {
     --general-style-color: #9EBB1F;
 }
 
-.wrapper {
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1000px;
+}
+
+.resume {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 2fr)) repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 50px auto;
+    border: 1px solid #f5f5f5;
+    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    padding-top: 30px;
+    max-width: 1000px;
 }
 
 .box1 {
@@ -35,37 +46,11 @@ body {
     padding-left: 20px;
 }
 
-footer {
+#footer {
     grid-column: 1 / 3;
     background-color: var(--general-style-color);
     margin-top: 128px;
     height: 28px;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0 30px;
-    max-width: 1000px;
-}
-
-/* .fh {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.fv {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-.resume {
-    margin: 50px auto;
-    border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
-    padding-top: 30px;
-    max-width: 1000px;
 }
 
 .resume__block {
@@ -74,76 +59,55 @@ footer {
     margin-bottom: 15px;
 }
 
-    /* .contact-info__block:not(:last-child) {
-        margin-bottom: 20px;
-    } */
 
 /* contact info styles */
 
-.contact-info__header,
-  /* .contact-info__sub-header {
-      text-align: center;
-  } */
 
-  .contact-info__header {
-      color: var(--secondary-text-color);
-      margin-bottom: 15px;
-  }
-
-  /* .contact-info__sub-header {
-      color: var(--secondary-text-color);
-      margin-bottom: 30px;
-  } */
-
-  /* .contact-info__block {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  } */
-
-  .contact-info__item {
-      color: var(--secondary-text-color);
-      text-decoration: none;
-      display: inline-flex;
-      justify-content: space-between;
-      margin-right: 8px;
-      /* justify-content: start; */
-  }
-
-  .contact-info__item:not(:last-child) {
-      margin-bottom: 20px;
-  }
-
-  .contact-info__item-icon-wrapper {
-      margin-right: 4px;
-      width: 20px;
-      /* display: flex;
-      justify-content: center; */
-  }
-
-  .contact-info__item-icon path {
-      fill: var(--icon-color);
-  }
-
-  .contact-info__item-icon {
-      height: 1.1428rem;
-      vertical-align: text-bottom;
-  }
-
-  .avatar-block--center {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+.contact-info__header {
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
 }
 
-  .intro__avatar {
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border: 3px solid;
-      border-color: var(--text-decoration-color);
-  }
+.contact-info__item {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
+.contact-info__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contact-info__item-icon-wrapper {
+    margin-right: 4px;
+    width: 20px;
+}
+
+.contact-info__item-icon path {
+    fill: var(--icon-color);
+}
+
+.contact-info__item-icon {
+    height: 1.1428rem;
+    vertical-align: text-bottom;
+}
+
+.avatar-block--center {
+display: flex;
+justify-content: center;
+margin-bottom: 5px;
+}
+
+.intro__avatar {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid;
+    border-color: var(--text-decoration-color);
+}
 
 /* intro and skills styles */
 
@@ -190,14 +154,12 @@ footer {
 
 .skills__header {
     color: var(--secondary-text-color);
-    /* text-align: left; */
     margin-bottom: 15px;
 }
 
 .skills__category {
     color: var(--secondary-text-color);
     font-weight: 800;
-    /* text-align: left; */
     margin-bottom: 5px;
 }
 
@@ -210,7 +172,6 @@ footer {
 /* experience and additional info styles */
 
 .experiences {
-    /* flex: 1 1 60%; */
     margin-right: 50px;
 }
 
@@ -257,10 +218,6 @@ footer {
     color: var(--secondary-text-color);
     padding-left: 20px;
 }
-
-/* .additional-info {
-    flex: 1 1 40%;
-} */
 
 .additional-info__education {
     margin-bottom: 20px;
